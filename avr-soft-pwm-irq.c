@@ -6,7 +6,7 @@
 #define CTR_SET_HIGH  (((NS_PWM_PERIOD)-(NS_MIN_HIGH)) / (NS_PER_T0_OVF))
 
 uint8_t pwm_vals[6] = { 0, 255, 4, 4, 4, 4 };
-uint16_t pwm_ctr;
+static uint16_t pwm_ctr;
 
 ISR(TIMER0_OVF_vect)
 {

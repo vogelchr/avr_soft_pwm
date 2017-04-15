@@ -16,10 +16,7 @@
 #define NS_MIN_HIGH     1000000ULL  /* 1e6ns = 1 ms */
 
 extern uint8_t pwm_vals[6];
-extern uint16_t pwm_ctr;
-
 extern void avr_soft_pwm_irq_init();
-
 
 #endif
 
